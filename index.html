@@ -53,6 +53,83 @@
             </p>
             
         </div>
+
+        <div style="margin-left:2%; margin-right:10%;">
+            <h2>Week 3 reflection</h2>
+            <p>Augmentative and Alternative Communication (AAC) devices serve a diverse audience with various communication needs. Curtis et al. (2022) 
+                performed a systematic review of papers related to AAC research as of June 2021. This paper states that only around 2.5% of papers addressed 
+                DHH needs, they also add that this makes sense as the d/Deaf community use AAC devices less than other groups that receive a heavier focus such 
+                as autism or people with motor impairments. They found that research often focused on making AACs for settings of business or family and friends, 
+                along with a focus on making devices automatic and customizable. They also identified areas that received much less attention, namely virtual and 
+                group settings, and attributes such as adaptability and expressiveness were less of a focus. Since this study was conducted in the middle of 2021 
+                there is likely much more research on virtual settings due to the lockdowns stemming from COVID-19. The lack of expressive technology is particularly 
+                felt by AAC users (Kane et al., 2017), the best way to address this is to include users as participants in studies and ask for and listen to feedback.</p> 
+            <p>
+                Shen et al. (2022), created KwickChat which utilizes a GPT LLM that takes three main inputs: 1) Keywords inputted by the user,
+            2) the user's background information, previously supplied by the user, and 3) the context of the conversation. Using these pieces of information
+            the LLM crafts a reply that appropriately incorporates all three inputs. Human judges reviewed 100 replies and the median score on a scale of 
+            1 to 5 was four which indicates a consistent ability to generate acceptable responses. Shen et al. used a GPT-2 model, meaning newer models that 
+            have better linguistic capabilities may produce more natural sentences.
+            </p>
+            <p>Valencia et al. (2023) created a program that takes inputs similar to KwickChat, keywords, personal and conversational background, and outputs four 
+                potential options for a response. They also added two more methods of input, the first is their speech macros, where each macro is made for a 
+                different task (eg. extended reply, make a request, reply using personal information). Second is a variability slider which will increase the 
+                range of responses, in the case they are too similar. Overall every speech macro was met with overwhelmingly positive feedback from the study's 
+                participants as well as a wealth of information on points of improvements. One of the most notable findings was that some models may be trained to 
+                avoid some topics of conversations, for example even after varied prompting one user was unable to make the LLM generate a request to go outside and 
+                smoke a cigarette. Overall users were comfortable with the program but felt the lack of ability to show personal expression was very disappointing, 
+                they suggested a much expanded form of the "respond using personal information" macro could help address this by incorporating character traits or 
+                cultural influences. This points to the main crux of predictive text in AAC devices - faster output is more likely to abridge user input, which can 
+                be addressed through AI's adaptive capabilities and thoughtful design.
+            </p>
+            <p>Weinberg et al. (2025) endeavoured to expand AAC users ability to joke, which requires good timing and creativity. They did this by creating four 
+                interfaces designed solely for humorous comments, each with different features but all of which used conversational context and an LLM to craft jokes, 
+                and gave them to participants to use and compare. For all interfaces except one, users could type into a text box and have their sentences prioritized 
+                for the foundation of making a joke. Analyzing the interfaces that were well regarded and those that were poorly regarded furthers understanding of what 
+                makes technology using LLMs for speech generation usable. The simplest interface was called 'Full auto' and it involved a transcript of the conversation
+                 and one suggestion from the LLM, that the user could accept or refresh. This interface was received very well, likely because of the ability to generate
+                  several different jokes in quick succession. The most divisive interface was 'Wizard,'' it received almost no neutral responses for any survey question.
+                   Wizard involved selecting one or multiple keywords, then a word associated with the chosen word(s), then picking from three possible jokes. 
+                   All words were provided by the LLM, and this interface had no box for user input. This interface likely caused such a split in the participants 
+                   because it required some of the most interaction in very metered ways that can seem unnatural to some. The interface called 'Keywords' had the 
+                   least positive response, which is strange considering its function is nearly identical to full auto. The key difference was five key words 
+                   from the previous few lines of dialogue, and no transcript. The reason this was so disliked despite its similarity to a full auto was its 
+                   cognitive requirements, thinking about how the key words relate to the discussion, then reading the joke based on the key word, all this 
+                   without a transcript to glance at likely reduces the ease of use. The other interface that was received as well as full auto was 'Context Bubble 
+                   Selection.'' This interface shows a transcript that is separated into speech bubbles, users can select them to form the basis of the joke, then 
+                   pick keywords from the selected text to refine the joke, then pick from joke suggestions. Though this is around the same amount of clicks to 
+                   make a joke as keywords it seems to be more intuitive to the users. This study is a wealth of information on how to test similar features to 
+                   achieve a communication goal, as well as insight into what many of those features look like.
+            </p>
+            <p>One example of a program that combines many of the most successful features discussed thus far is COMPA (Valencia et al., 2024). 
+            COMPA is an addon for google meets, it works when all participants in a meeting have it enabled. COMPA shows all participants a shared transcript, 
+            when an AAC user wants to speak they mark a spot on the transcript to respond to and other users are notified they are typing. Before users start 
+            typing they are asked to pick their intent, which will indicate the sentence type such as stating an opinion or asking a question. Depending on the 
+            intent type, of which there were four, an LLM would present three suggestions for sentence starters. The ability to specify context and notify others 
+            when typing were both greatly appreciated features. However some participants indicated the intention feature was unwarranted, which is supported by 
+            fewer users expressing a desire to use versions of COMPA containing the intent feature. One user explained that the intent being a necessary part of 
+            sending a message is an overall slowdown. Interestingly, the phrase assistance provided by the LLM was looked upon far more favorably when guided by 
+            intent. COMPA shows future designers that AACs made for virtual settings can utilize features typically unavailable in face to face conversation to
+             make a more equitable conversation for all.
+            </p>
+	        <p>Yusufali et al. (2023) used a measure called index of difficulty to measure difficulty for moving from one point to another on an interface. They also 
+                modeled the relation between choices presented to a user and their response time. Using this information they could measure how easy a given interface 
+                was to use and have an estimate for the speed a user can interact with the UI, including an estimate for text entry rates.</p>
+ 	        <p>The efficacy of the model or application itself can often be difficult to measure, as sentences rarely lend themselves easily to empirical evaluation. 
+                In their development of KwickChat, Shen et al. (2022) used measures like BLEU and WER which measure the similarity of the suggested sentence to the 
+                “golden reply,” they acknowledge different ways to convey the same message can limit the effectiveness of these measures. The best metric for the 
+                efficacy of a system made to supplement a user's communication is user feedback. Users can supply in depth explanations of their thoughts on the 
+                technology, as well as provide quantitative representations of their impressions for easier aggregation. Most importantly, user feedback is often 
+                an essential component of drawing conclusions to AAC research (Weinberg et al., 2025, Valencia et al.,2023, Valencia et al., 2024). Though some 
+                studies cannot receive user feedback, because their communication devices are still in infancy and user testing borders on unethical, or due to 
+                time or budget constraints. If that is the case, keystroke savings and text entry rates are consistent and informative metrics, though keystroke 
+                reduction does not always translate directly to a change in text entry rate (Cai et al., 2023) and text entry rate does require user testing. 
+                Valencia et al. (2024) measured turns in conversation and words per turn to measure participation to measure the efficacy of COMPA. However these 
+                numbers do not shed much light on the actual shift of conversational dynamics, as a conversation with more turns taken but less words communicated, 
+                could mean a participant was rushed, or it could indicate a more fluid conversation with each partner interjecting more often. When compared with user 
+                feedback, in the form of perceived participation, the numbers are more telling. More pointed questions such as how effectively they felt they were 
+                communicating could be more elucidating.</p>
+        </div>
     </main>
 </body>
 </html>
